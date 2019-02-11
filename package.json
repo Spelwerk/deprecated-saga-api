@@ -1,0 +1,62 @@
+{
+  "name": "spelwerk-saga-api",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:princejonn/spelwerk-saga-api.git"
+  },
+  "scripts": {
+    "start": "NODE_PATH=. NODE_ENV=production node server.js",
+    "dev": "NODE_PATH=. NODE_ENV=development NODE_CONSOLE_LEVEL=info nodemon server.js",
+    "test": "mocha -R mocha-silent-reporter ./tests/index.js"
+  },
+  "dependencies": {
+    "spelwerk-service-mysql": "git+ssh://git@bitbucket.org:princejonn/spelwerk-service-mysql.git#dev",
+    "spelwerk-service-utility": "git+ssh://git@bitbucket.org:princejonn/spelwerk-service-utility.git#dev",
+    "basic-auth": "^2.0.0",
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
+    "date-fns": "^1.29.0",
+    "enforce-node-path": "^1.0.0",
+    "express": "^4.16.3",
+    "express-bunyan-logger": "^1.3.3",
+    "express-promise": "^0.4.0",
+    "express-useragent": "^1.0.12",
+    "express-validation": "^1.0.2",
+    "express-validator": "^5.3.0",
+    "joi": "^13.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "mailgun-js": "^0.20.0",
+    "mysql2": "^1.6.1",
+    "nconf": "^0.10.0",
+    "nconf-yaml": "^1.0.2",
+    "node-yaml": "^3.1.1",
+    "otplib": "^10.0.1",
+    "path": "^0.12.7",
+    "qrcode": "^1.2.2",
+    "ramda": "^0.25.0",
+    "socket.io": "^2.1.1",
+    "uuid": "^3.3.2",
+    "validator": "^10.7.1",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.2.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "esprima": "^4.0.1",
+    "jest": "^23.5.0",
+    "mocha": "^5.2.0",
+    "mocha-silent-reporter": "^1.0.0",
+    "nodemon": "^1.18.3",
+    "supertest": "^3.1.0"
+  }
+}

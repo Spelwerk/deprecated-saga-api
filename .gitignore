@@ -1,0 +1,30 @@
+## GLOBAL
+/.idea
+/node_modules
+
+## INSPIRATION
+/__spelwerk-api-crud
+/__spelwerk-api-view
+/__stateful-io-manage-ui
+
+## LOGS
+/logs/*
+
+## CONFIG
+/config/mailgun.yml
+/config/production.yml
+
+# TESTING
+/coverage
+/tests/secret
+
+# PRODUCTION
+/build
+
+# MISC
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*

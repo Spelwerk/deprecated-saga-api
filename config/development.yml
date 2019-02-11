@@ -1,0 +1,37 @@
+port: 4000
+
+apiKey:
+  id: id
+  secret: secret
+
+database:
+  host: localhost
+  database: saga_v1
+  user: spelwerk
+  password: spelwerk
+  waitForConnections: true
+  connectionLimit: 1000
+  queueLimit: 0
+  debug: false
+
+secrets:
+  jwt: jwt
+  aes: aes
+  sha: sha
+
+salt: 4
+
+admin:
+  email: admin@spelwerk.com
+  password: password
+  displayName: administrator
+  noreply: noreply@spelwerk.com
+
+links:
+  base: http://spelwerk.dev/
+
+  account:
+    create: /register/verify/
+    password: /account/password/verify/
+    email: /account/email/verify/
+    login: /login/verify/

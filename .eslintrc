@@ -1,0 +1,27 @@
+{
+  "parser": "esprima",
+  "plugins": [
+    "node",
+    "express"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "rules": {
+    "extends": "airbnb",
+    "import/no-unresolved": 0,
+    "implicit-arrow-linebreak": 0,
+    "max-len": ["warn", 150],
+    "indent": ["error", 4],
+    "comma-dangle": ["error", "always-multiline"],
+    "arrow-body-style": "warn",
+    "object-curly-newline": ["warn", {
+      "ObjectPattern": { "multiline": true },
+      "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+    }],
+    "global-require": "warn",
+    "no-case-declarations": "off",
+    "no-unused-vars": "warn"
+  }
+}

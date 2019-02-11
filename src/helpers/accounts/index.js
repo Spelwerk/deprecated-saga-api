@@ -1,0 +1,15 @@
+module.exports = {
+    accounts: require('./response-helper-account'),
+    email: require('./response-helper-change-email'),
+    password: require('./response-helper-change-password'),
+    exists: require('./response-helper-exists'),
+    login: require('./response-helper-login'),
+    logout: require('./response-helper-logout'),
+    otp: require('./response-helper-otp'),
+    roles: require('./response-helper-role'),
+    saveTable: require('./response-helper-save-table'),
+    securityQuestion: require('./response-helper-security-question'),
+    sessions: require('./response-helper-session'),
+    refreshToken: require('./response-helper-refresh-token'),
+    verify: require('./response-helper-verify'),
+};
